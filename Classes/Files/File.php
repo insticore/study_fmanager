@@ -28,7 +28,7 @@ class File extends Entity
      */
     public function showTeaser()
     {
-        echo '<div class="tm-teaser"><i class="uk-icon-file"></i> ' . $this->name . '<span class="uk-text-muted uk-float-right">['.Helper::formatSize($this->size).']</span></div>';
+        echo '<div class="tm-teaser"><i class="uk-icon-file"></i> ' . $this->name . '<span class="uk-badge uk-badge-warning uk-margin-left">'. strtoupper($this->type).'</span><span class="uk-text-muted uk-float-right">['.Helper::formatSize($this->size).']</span></div>';
     }
 
     /**
